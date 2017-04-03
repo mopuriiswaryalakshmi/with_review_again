@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Basic Page Needs
+    ================================================== -->
+    <!-- <title>EmbryonHealthCarePvtLtd</title> -->
+     <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/icon" href="images/favicon.ico"/> -->
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Pediatric Health Care center">
+    <meta name="author" content="NEOWOMB HEALTH CARE PRIVATE LIMITED">  -->
+  
+  <!--=============================================== 
+    Template Design By WpFreeware Team.
+    Author URI : http://www.wpfreeware.com/
+    ====================================================-->
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>NeoWombHealthCarePvtLtd</title>
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="images/icon" href="../images/favicon.ico"/>
+    
+    <!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">       
+    <!-- Default Theme css file -->
+    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">    
+    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+
+    <!-- Main structure css file -->
+    <link href="style.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Google Fonts (Droid Sans) Start -->
+<link href='//fonts.googleapis.com/css?family=Droid+Sans&v1' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=&v1' rel='stylesheet' type='text/css'>
+<!-- Google Fonts (Droid Sans) End -->
+
+   <!-- <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Online e-commerce store">
+  <meta name="author" content="DCT Academy"> -->
+  <%# stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+   
+ 
+
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<!-- BEGAIN PRELOADER -->
+    <!-- <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div> -->
+    <!-- END PRELOADER -->
+
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-heartbeat"></i></a>
+    <!-- END SCROLL TOP BUTTON -->
+
+    <%= render '/layouts/navigation' %>
+
+
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+	<%= yield %>
+	<%= render '/layouts/footer' %>
+    
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>
