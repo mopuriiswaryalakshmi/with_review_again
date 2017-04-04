@@ -24,8 +24,10 @@ module Newomb
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.enabled = true
     
+=begin
     config.assets.compile = true
     config.assets.digest = true
+=end
   end
 end
 
