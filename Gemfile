@@ -46,7 +46,7 @@ end
 
 
 
-gem 'sprockets', '2.12.3'
+#gem 'sprockets', '2.12.3'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
