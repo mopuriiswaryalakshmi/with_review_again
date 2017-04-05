@@ -1,5 +1,6 @@
 class ServicesController < ApplicationController
-def index
+
+    def index
 		@services=Service.all
 		#@review = Review.new
 		#@reviews = @service.reviews
@@ -10,7 +11,7 @@ def index
 	end
 
 	def create
-		@service=Service.new(service_params)
+		@service= Service.new(service_params)
 		if @service.save
 			redirect_to service_path(@service), notice: "successfully done"
 		else
@@ -21,17 +22,14 @@ def index
 
 	def show
 		begin
-			
-		    @service=Sevice.find(params[:id])
-		    
-	    rescue ActiveRecord::RecordNotFound
+			@service=Sevice.find(params[:id])
+		rescue ActiveRecord::RecordNotFound
 	    	redirect_to services_path, notice: "Record Not Found"
 	    end
 	end
 
 	def edit
 		@service=Service.find(params[:id])
-		
 	end
 
 	def update
