@@ -88,7 +88,6 @@ GEM
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     pg (0.20.0)
-    photoswipe-rails (4.1.1)
     rack (1.6.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -177,7 +176,6 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   pg
-  photoswipe-rails
   rails (= 4.2.6)
   rails_12factor
   sass-rails (~> 5.0)
